@@ -5,7 +5,7 @@ services:
             - 8080:3000
         command: yarn start
         volumes:
-            - ./client/src/:/app/src
+            - ./client/src/:/client/src
             - /app/node_modules
 
     server:
@@ -14,7 +14,7 @@ services:
             - 5050:5000
         command: npm run dev
         volumes:
-            - ./server/src/:/app/src
+            - ./server/src/:/server/src
 
     mongodb:
         image: mongo

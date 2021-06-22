@@ -1,6 +1,7 @@
 FROM node:current-alpine3.10
 
-WORKDIR /app
+RUN mkdir /client
+WORKDIR /client
 
 ENV PATH /app/node_modules/.bin:$PATH
 

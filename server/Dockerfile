@@ -1,7 +1,8 @@
 FROM node:alpine
 
-RUN mkdir /app
-WORKDIR /app
+RUN mkdir /server
+WORKDIR /server
+
 COPY package*.json ./
 RUN npm i
 COPY src src
